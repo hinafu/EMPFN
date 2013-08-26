@@ -1,0 +1,33 @@
+.divSlider {
+  position: absolute;
+  left: 638px;
+  top: 0px;
+  width: 290px;
+  height: 264px;
+  font-family: "Open Sans";
+  font-size: 11px;
+}
+
+.imgSlider {
+  /*position: absolute;*/
+  left: 3px;
+  top: -10px;
+  width: 632px;
+  height: 264px;
+}
+
+.bxslider li {
+  top: -15px;
+}
+
+.tituloSlider {
+  color: #439EBA;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#divslidermain {
+  min-width: 931px;
+  max-width: 931px;
+  height: 270px;
+}

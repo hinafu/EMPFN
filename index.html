@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+    <link href = 'http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+    <meta charset = "utf-8" />
+    <title>Escuela del Ministerio Público - Fiscalía de la Nación</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/bootstrap.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/otro.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/jquery.bxslider.css">
+  </head>
+  <body>
+    <script src = "http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src = "js/jquery.bxslider.min.js"></script>
+    <script src = "js/bootstrap.min.js"></script>
+
+    <div id = "cuerpo">
+      <!-- Cabecera -->
+      <div id = "logo">
+        <img src = "images/logo.jpg" alt = "logo" />
+      </div>
+
+      <!-- Menú extra -->
+      <div id = "menu_prim">
+        <span style = "position: absolute; right: 37px;"><a href = "#">Inscripciones en línea</a> | <a href = "#">Sistema informático</a></span>
+      </div>
+
+      <!-- Buscador -->
+      <div id = "div_buscador">
+        <div id = "buscador">
+          <input type = "text" name = "entrada_buscador" id = "entrada" />
+          <input type = "button" class = "btn btn-small boton" value = "Buscar" name = "boton_buscador" />
+        </div>
+      </div>
+
+      <!-- Menú -->
+      <ul id = "menu">
+        <li><a href = "#">Inicio</a></li>
+        <li><a href = "#">Conócenos</a>
+          <ul class = "submenu">
+            <li><a href = "#">Presentación</a></li>
+            <li><a href = "#">Visión y Misión</a></li>
+            <li><a href = "#">Líneas de Trabajo</a></li>
+            <li><a href = "#">Organización</a></li>
+          </ul>
+        </li>
+        <li><a href = "#">Plan Operativo</a></li>
+        <li><a href = "#">Documentos</a>
+          <ul class = "submenu">
+            <li><a href = "#">Normatividad</a></li>
+            <li><a href = "#">Resoluciones</a></li>
+            <li><a href = "#">Artículos jurídicos</a></li>
+            <li><a href = "#">Recortes periodísticos</a></li>
+            <li><a href = "#">Notas de Prensa</a></li>
+            <li><a href = "#">Enlaces académicos</a></li>
+          </ul>
+        </li>
+        <li><a href = "#">Publicaciones</a></li>
+        <li><a href = "#">Becas y convenios</a></li>
+        <li><a href = "#">Pasantías</a></li>
+        <li><a href = "#">Biblioteca</a></li>
+      </ul>
+
+      <!-- Título de la página -->
+
+      <div id = "titulo">
+        Actividades Académicas
+      </div>
+
+      <!-- Slider --> 
+      <div id = "divslidermain">
+        <ul class = "bxslider">
+          <li>
+            <img src = "content/img/1.jpg" class = "imgSlider" />
+            <div class = "divSlider">
+              <span class = "tituloSlider">Título 1</span><br /><br />
+              Texto 1
+            </div>
+          </li>
+          <li>
+            <img src = "content/img/2.jpg" class = "imgSlider" />
+            <div class = "divSlider">
+              <span class = "tituloSlider">Título 2</span><br /><br />
+              Texto 2
+            </div>
+          </li>
+          <li>
+            <img src = "content/img/3.jpg" class = "imgSlider" />
+            <div class = "divSlider">
+              <span class = "tituloSlider">Título 3</span><br /><br />
+              Texto 3
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Destacados -->
+      <div id = "destacados">
+        <div class = "mini_titulo">Destacados</div>
+        <ul class = "items">
+          <li>Cont 1</li>
+          <li>Cont 2</li>
+          <li>Cont 3</li>
+        </ul>
+        <input type = "button" class = "btn btn-small boton ver_mas" value = "Ver más"/>
+      </div>
+
+      <!-- Buscador de actividades -->
+      <div id = "busc_acti_outer">
+        <div class = "mini_titulo" id = "busc_acti_tit">Buscador de actividades</div>
+        <div id = "busc_acti_inner">
+          <form id = "form_acti">
+            Contenido: <br/>
+            <input type = "text"><br/>
+            Sistema: <br/>
+            <input type = "text"><br/>
+            Mes: <span style = "position: relative; left: 87px; ">Año:</span><br/>
+            <input type = "text" style = "width: 92px;"> <input type = "text" style = "position: relative;width: 92px;left: 5px;"><br/>
+            <input type = "button" class = "btn btn-small boton ver_mas" value = "Buscar"/>
+          </form>
+        </div>
+      </div>
+
+      <!-- Banner -->
+      <div id = "banner">
+        Acá va un banner
+      </div>
+
+      <!-- Resoluciones -->
+      <div id = "resoluciones">
+        <div class = "mini_titulo">Resoluciones</div>
+        <ul class = "items">
+          <li>Cont 1</li>
+          <li>Cont 2</li>
+          <li>Cont 3</li>
+        </ul>
+        <input type = "button" class = "btn btn-small boton ver_mas" value = "Ver más"/>
+      </div>
+
+      <!-- Multimedia-->
+      <div id = "multi_outer"></div>
+
+      <!-- Vacío -->
+      <div id = "empty"></div>
+
+      <!-- -->
+      <div id = "menu_final">
+        <ul>
+          <li><h1>Información general</h1>
+            <ul>
+              <li>Conócenos</li>
+              <li>Biblioteca</li>
+              <li>Documentos</li>
+              <li>Publicaciones</li>
+              <li>Becas y convenios</li>
+              <li>Pasantías</li>
+            </ul>
+          </li>
+          <li><h1>Enlaces de interés</h1>
+            <ul>
+              <li>Recampi</li>
+            </ul>
+          </li>
+          <li><h1>Síguenos</h1>
+            <ul>
+              <li><img src = "images/facebook.png" alt = "fb" /> Facebook</li>
+              <li><img src = "images/twitter.png" alt = "tw" /> Twitter</li>
+              <li><img src = "images/googleplus.png" alt = "gp" /> Google+</li>
+              <li><img src = "images/youtube.png" alt = "yt" /> Youtube</li>
+              <li><img src = "images/rss.png" alt = "rss" /> RSS</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- jQuery -->
+      <script>
+      $(document).ready(function() {
+        $(".bxslider").bxSlider({
+          auto: true,
+          mode: "fade",
+          pager: false, //Para que no aparezcan los puntitos
+          speed: 1000 //La velocidad con la que se mueve
+        });
+      });
+      </script>
+    </div>
+  </body>
+</html>
