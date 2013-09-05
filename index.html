@@ -4,29 +4,24 @@
     <!--[if lt IE 9]>
     <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
     <![endif]-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,700' rel='stylesheet' type='text/css'>
-    <link rel = "icon" type = "image/png" href = "images/favicon.png" />
+    <link href = 'http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
     <meta charset = "utf-8" />
     <title>Escuela del Ministerio Público - Fiscalía de la Nación</title>
     <link rel = "stylesheet" type = "text/css" href = "css/bootstrap.min.css">
     <link rel = "stylesheet" type = "text/css" href = "css/otro.css">
     <link rel = "stylesheet" type = "text/css" href = "css/jquery.bxslider.css">
-    <link rel="stylesheet" href = "css/jquery-ui-1.10.3.custom.css">
   </head>
   <body>
     <script src = "http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src = "js/jquery.bxslider.min.js"></script>
     <script src = "js/bootstrap.min.js"></script>
-    <script src = "js/jquery-ui-1.10.3.custom.js"></script>
-    <script src = "js/jwplayer/jwplayer.js"></script>
-    <script src = "js/jquery.cycle.all.js"></script>
 
     <div id = "cuerpo">
       <!-- Cabecera -->
       <div id = "logo">
-
         <img src = "images/logo.jpg" alt = "logo" />
       </div>
+
       <!-- Menú extra -->
       <div id = "menu_prim">
         <span style = "position: absolute; right: 37px;"><a href = "#">Inscripciones en línea</a> | <a href = "#">Sistema informático</a></span>
@@ -45,7 +40,7 @@
         <li><a href = "#">Inicio</a></li>
         <li><a href = "#">Conócenos</a>
           <ul class = "submenu">
-            <li><a href = "presentacion.html">Presentación</a></li>
+            <li><a href = "#">Presentación</a></li>
             <li><a href = "#">Visión y Misión</a></li>
             <li><a href = "#">Líneas de Trabajo</a></li>
             <li><a href = "#">Organización</a></li>
@@ -80,15 +75,15 @@
           <li>
             <img src = "content/img/1.jpg" class = "imgSlider" />
             <div class = "divSlider">
-              <span class = "tituloSlider">Curso-taller Teoría del delito y principio de Imputación necesaria</span><br /><br />
-              Tiene como objetivo principal actualizar a los participantes en los elementos de la teoría del delito y su importancia en la reforma procesal penal, así como analizar los problemas que se presentan al momento de la tipificación de los diferentes ilícitos penales.
+              <span class = "tituloSlider">Título 1</span><br /><br />
+              Texto 1
             </div>
           </li>
           <li>
             <img src = "content/img/2.jpg" class = "imgSlider" />
             <div class = "divSlider">
               <span class = "tituloSlider">Título 2</span><br /><br />
-              Tiene como objetivo principal actualizar a los participantes en los elementos de la teoría del delito y su importancia en la reforma procesal penal, así como analizar los problemas que se presentan al momento de la tipificación de los diferentes ilícitos penales. Tiene como objetivo principal actualizar a los participantes en los elementos de la teoría del delito y su importancia en la reforma procesal penal, así como analizar los problemas que se presentan al momento de la tipificación de los diferentes ilícitos penales.
+              Texto 2
             </div>
           </li>
           <li>
@@ -99,22 +94,15 @@
             </div>
           </li>
         </ul>
-        <input type = "button" class = "btn btn-small boton ver_mas" value = "Ver más"/>
       </div>
 
       <!-- Destacados -->
       <div id = "destacados">
         <div class = "mini_titulo">Destacados</div>
         <ul class = "items">
-          <li><a href = "#">18 de agosto 2013</a>
-            <p>Distrito Fiscal Moquegua: <br> Proceso de evaluación para Registro de Peritos Fiscales del Ministerio Público - Recurso de reconsideración.</p>
-          </li>
-          <li><a href = "#">18 de agosto 2013</a>
-            <p>Distrito Fiscal Moquegua: <br> Proceso de evaluación para Registro de Peritos Fiscales del Ministerio Público - Recurso de reconsideración.</p>
-          </li>
-          <li><a href = "#">18 de agosto 2013</a>
-            <p>Distrito Fiscal Moquegua: <br> Proceso de evaluación para Registro de Peritos Fiscales del Ministerio Público - Recurso de reconsideración.</p>
-          </li>
+          <li>Cont 1</li>
+          <li>Cont 2</li>
+          <li>Cont 3</li>
         </ul>
         <input type = "button" class = "btn btn-small boton ver_mas" value = "Ver más"/>
       </div>
@@ -127,44 +115,11 @@
             Contenido: <br/>
             <input type = "text"><br/>
             Sistema: <br/>
-            <select name = "busc_sist" style = "height: 28px">
-              <option value = "all">Todos</option>
-              <option value = "adm">Administrativo</option>
-              <option value = "fis">Fiscal</option>
-              <option value = "med">Médico - Legal</option>
-            </select><br/>
+            <input type = "text"><br/>
             Mes: <span style = "position: relative; left: 87px; ">Año:</span><br/>
-            <!--<input type = "text" style = "width: 92px;">-->
-            <select name = "busc_mes" style = "width: 106px; height: 28px">
-              <option value = "all">Todos</option>
-              <option value = "ene">Enero</option>
-              <option value = "feb">Febrero</option>
-              <option value = "mar">Marzo</option>
-              <option value = "abr">Abril</option>
-              <option value = "may">Mayo</option>
-              <option value = "jun">Junio</option>
-              <option value = "jul">Julio</option>
-              <option value = "ago">Agosto</option>
-              <option value = "set">Setiembre</option>
-              <option value = "oct">Octubre</option>
-              <option value = "nov">Noviembre</option>
-              <option value = "dic">Diciembre</option>
-            </select>
-            <select name = "busc_anho" style = "position: relative;width: 106px; height: 28px; left: 5px">
-              <option value = "all">Todos</option>
-              <option value = "cua">2014</option>
-              <option value = "tre">2013</option>
-              <option value = "doc">2012</option>
-              <option value = "onc">2011</option>
-              <option value = "die">2010</option>
-              <option value = "nue">2009</option>
-              <option value = "och">2008</option>
-            </select>
-            <input type = "button" class = "btn btn-small boton ver_mas" style = "bottom: 0; right: 0;" value = "Buscar"/>
+            <input type = "text" style = "width: 92px;"> <input type = "text" style = "position: relative;width: 92px;left: 5px;"><br/>
+            <input type = "button" class = "btn btn-small boton ver_mas" value = "Buscar"/>
           </form>
-          <div id = "calendario">
-            <div id="datepicker"></div>
-          </div>
         </div>
       </div>
 
@@ -177,29 +132,15 @@
       <div id = "resoluciones">
         <div class = "mini_titulo">Resoluciones</div>
         <ul class = "items">
-          <li><h1>Res 2461-2013-MP-FN</h1>
-            (09/08/2013) AUTORIZAR el desplazamiento por capacitación oficializada de la doctora Gladys Flor Guevara Bacalla, Médico Legista de la División Médico ...
-          </li>
-          <li><h1>Res 2461-2013-MP-FN</h1>
-            (09/08/2013) AUTORIZAR el desplazamiento por capacitación oficializada de la doctora Gladys Flor Guevara Bacalla, Médico Legista de la División Médico ...
-          </li>
-          <li><h1>Res 2461-2013-MP-FN</h1>
-            (09/08/2013) AUTORIZAR el desplazamiento por capacitación oficializada de la doctora Gladys Flor Guevara Bacalla, Médico Legista de la División Médico ...
-          </li>
+          <li>Cont 1</li>
+          <li>Cont 2</li>
+          <li>Cont 3</li>
         </ul>
         <input type = "button" class = "btn btn-small boton ver_mas" value = "Ver más"/>
       </div>
 
-      <!-- Multimedia -->
-      <div id = "multi_outer">
-        <span style = "color: white;">Hola</span>
-        <script type="text/javascript">
-        jwplayer("multi_outer").setup({
-          file: "videos/test.flv",
-          image: "videos/test.jpg"
-        });
-        </script>
-      </div>
+      <!-- Multimedia-->
+      <div id = "multi_outer"></div>
 
       <!-- Vacío -->
       <div id = "empty"></div>
@@ -243,29 +184,6 @@
           pager: false, //Para que no aparezcan los puntitos
           speed: 1000 //La velocidad con la que se mueve
         });
-
-        $("div#destacados ul.items").cycle({
-          fx: "scrollDown",
-          height: "100px",
-          pause: "true",
-          delay: -2000,
-        });
-      });
-      </script>
-      <script>
-      $(function() {
-        $( "#datepicker" ).datepicker({
-          inline: true
-        });
-        // Hover states on the static widgets
-        $( "#dialog-link, #icons li" ).hover(
-          function() {
-            $( this ).addClass( "ui-state-hover" );
-          },
-          function() {
-            $( this ).removeClass( "ui-state-hover" );
-          }
-        );
       });
       </script>
     </div>
