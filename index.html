@@ -11,7 +11,8 @@
     <link rel = "stylesheet" type = "text/css" href = "css/bootstrap.min.css">
     <link rel = "stylesheet" type = "text/css" href = "css/otro.css">
     <link rel = "stylesheet" type = "text/css" href = "css/jquery.bxslider.css">
-    <link rel="stylesheet" href = "css/jquery-ui-1.10.3.custom.css">
+    <link rel = "stylesheet" href = "css/jquery-ui-1.10.3.custom.css">
+    <link rel = "stylesheet" href = "css/mediaelementplayer.min.css" >
   </head>
   <body>
     <script src = "http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -20,6 +21,8 @@
     <script src = "js/jquery-ui-1.10.3.custom.js"></script>
     <script src = "js/jwplayer/jwplayer.js"></script>
     <script src = "js/jquery.cycle.all.js"></script>
+    <script src = "js/mediaelement-and-player.min.js"></script>
+    <script src = "js/jquery.jcarousel.min.js"></script>
 
     <div id = "cuerpo">
       <!-- Cabecera -->
@@ -176,29 +179,53 @@
       <!-- Resoluciones -->
       <div id = "resoluciones">
         <div class = "mini_titulo">Resoluciones</div>
-        <ul class = "items">
-          <li><h1>Res 2461-2013-MP-FN</h1>
-            (09/08/2013) AUTORIZAR el desplazamiento por capacitación oficializada de la doctora Gladys Flor Guevara Bacalla, Médico Legista de la División Médico ...
-          </li>
-          <li><h1>Res 2461-2013-MP-FN</h1>
-            (09/08/2013) AUTORIZAR el desplazamiento por capacitación oficializada de la doctora Gladys Flor Guevara Bacalla, Médico Legista de la División Médico ...
-          </li>
-          <li><h1>Res 2461-2013-MP-FN</h1>
-            (09/08/2013) AUTORIZAR el desplazamiento por capacitación oficializada de la doctora Gladys Flor Guevara Bacalla, Médico Legista de la División Médico ...
-          </li>
-        </ul>
+        <div id = "res_updt">
+          <ul class = "items" style = "z-index: 4567;">
+            <li><h1>Res 2461-2013-MP-FN</h1>
+              (09/08/2013) AUTORIZAR el desplazamiento por capacitación oficializada de la doctora Gladys Flor Guevara Bacalla, Médico Legista de la División Médico ...
+            </li>
+            <li><h1>Res 2461-2013-MP-FN</h1>
+              (09/08/2013) AUTORIZAR el desplazamiento por capacitación oficializada de la doctora Gladys Flor Guevara Bacalla, Médico Legista de la División Médico ...
+            </li>
+            <li><h1>Res 2461-2013-MP-FN</h1>
+              (09/08/2013) AUTORIZAR el desplazamiento por capacitación oficializada de la doctora Gladys Flor Guevara Bacalla, Médico Legista de la División Médico ...
+            </li>
+            <li><h1>Res 2461-2013-MP-FN</h1>
+              (09/08/2013) AUTORIZAR el desplazamiento por capacitación oficializada de la doctora Gladys Flor Guevara Bacalla, Médico Legista de la División Médico ...
+            </li>
+            <li><h1>Res 2461-2013-MP-FN</h1>
+              (09/08/2013) AUTORIZAR el desplazamiento por capacitación oficializada de la doctora Gladys Flor Guevara Bacalla, Médico Legista de la División Médico ...
+            </li>
+          </ul>
+        </div>
         <input type = "button" class = "btn btn-small boton ver_mas" value = "Ver más"/>
       </div>
 
       <!-- Multimedia -->
       <div id = "multi_outer">
-        <span style = "color: white;">Hola</span>
-        <script type="text/javascript">
-        jwplayer("multi_outer").setup({
-          file: "videos/test.flv",
-          image: "videos/test.jpg"
-        });
-        </script>
+        <video src = "video/echo-hereweare.mp4" type = "video/mp4" id = "player1" poster = "video/echo-hereweare.jpg" controls = "controls" preload = "none"></video>
+        <ul id = "playlist">
+          <li>
+            <img src = "images/multi1.png" alt = "imagen1" />
+            <h1>03 - 01 - 2013 / Tumbes</h1>
+            Programa de Inducción: Formentando la Cultura Organizacional...
+          </li>
+          <li>
+            <img src = "images/multi2.png" alt = "imagen2" />
+            <h1>03 - 01 - 2013 / Tumbes</h1>
+            Programa de Inducción: Formentando la Cultura Organizacional...
+          </li>
+          <li>
+            <img src = "images/multi3.png" alt = "imagen3" />
+            <h1>03 - 01 - 2013 / Tumbes</h1>
+            Programa de Inducción: Formentando la Cultura Organizacional...
+          </li>
+          <li>
+            <img src = "images/multi4.png" alt = "imagen4" />
+            <h1>03 - 01 - 2013 / Tumbes</h1>
+            Programa de Inducción: Formentando la Cultura Organizacional...
+          </li>
+        </ul>
       </div>
 
       <!-- Vacío -->
@@ -249,6 +276,12 @@
           height: "100px",
           pause: "true",
           delay: -2000,
+        });
+        $("#resoluciones .items").jcarousel({
+          auto: 2.5,
+          scroll: 1,
+          vertical: true,
+          wrap: "circular",
         });
       });
       </script>
