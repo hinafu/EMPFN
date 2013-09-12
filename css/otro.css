@@ -215,7 +215,8 @@ ul#menu li:hover .submenu {
   margin: 0 9px 0 38px;
   padding: 0 40px;
   text-align: justify;
-  width: 522px;
+  width: 530px;
+  min-height: 250px;
   z-index: 3;
 }
 
@@ -686,4 +687,60 @@ ul.bxslider {
   padding: 5px 5px;
   text-transform: none;
   width: 100%;
+}
+
+/* Actividades académicas */
+
+#menu_act {
+  list-style: none;
+  width: 500px;
+}
+
+#menu_act li {
+  position: relative;
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: url("../images/Actividades.jpg");
+  margin: 0 20px;
+}
+
+#menu_act li.info {
+  background-position: 0 0;
+}
+
+#menu_act li.info:hover {
+  background-position: -60px 0;
+}
+
+#menu_act li.docu {
+  background-position: -120px 0;
+}
+
+#menu_act li.docu:hover {
+  background-position: -180px 0;
+}
+
+#menu_act li.part {
+  background-position: -240px 0;
+}
+
+#menu_act li.part:hover {
+  background-position: -300px 0;
+}
+
+#menu_act li.foto {
+  background-position: 240px 0;
+}
+
+#menu_act li.foto:hover {
+  background-position: 180px 0;
+}
+
+#menu_act li.vide {
+  background-position: 120px 0;
+}
+
+#menu_act li.vide:hover {
+  background-position: 60px 0;
 }
