@@ -586,6 +586,7 @@ ul.bxslider {
   position: relative;
   float: right;
   right: 15px;
+  top: 10px;
 }
 
 #multi_outer #playlist li {
