@@ -631,10 +631,12 @@
 			slider.controls.prev.bind('click', clickPrevBind);
 			// if nextSlector was supplied, populate it
 			if(slider.settings.nextSelector){
+				$(slider.settings.nextSelector).bind('click', clickNextBind);
 				$(slider.settings.nextSelector).append(slider.controls.next);
 			}
 			// if prevSlector was supplied, populate it
 			if(slider.settings.prevSelector){
+				$(slider.settings.prevSelector).bind('click', clickPrevBind);
 				$(slider.settings.prevSelector).append(slider.controls.prev);
 			}
 			// if no custom selectors were supplied

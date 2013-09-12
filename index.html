@@ -173,7 +173,14 @@
 
       <!-- Banner -->
       <div id = "banner">
-        Acá va un banner
+        <ul id = "slider_banner">
+          <li><img src = "images/banner1.jpg" alt = "wat" /></li>
+          <li><img src = "images/banner1.jpg" alt = "wat" /></li>
+          <li><img src = "images/banner1.jpg" alt = "wat" /></li>
+          <li><img src = "images/banner1.jpg" alt = "wat" /></li>
+        </ul>
+        <a id = "prev"></a>
+        <a id = "next"></a>
       </div>
 
       <!-- Resoluciones -->
@@ -271,11 +278,20 @@
           speed: 1000 //La velocidad con la que se mueve
         });
 
+        $("#slider_banner").bxSlider({
+          nextSelector: "#next",
+          nextText: "",
+          prevSelector: "#prev",
+          prevText: "",
+          auto: true,
+          pager: false,
+          speed: 1000,
+        });
         $("div#destacados ul.items").cycle({
           fx: "scrollDown",
           height: "100px",
           pause: "true",
-          delay: -2000,
+          delay: -2500,
         });
         $("#resoluciones .items").jcarousel({
           auto: 2.5,
