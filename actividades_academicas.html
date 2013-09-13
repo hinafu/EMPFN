@@ -4,14 +4,16 @@
     <!--[if lt IE 9]>
     <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
     <![endif]-->
-    <link href = 'http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,700' rel='stylesheet' type='text/css'>
     <link rel = "icon" type = "image/png" href = "images/favicon.png" />
     <meta charset = "utf-8" />
     <title>Escuela del Ministerio Público - Fiscalía de la Nación</title>
     <link rel = "stylesheet" type = "text/css" href = "css/bootstrap.min.css">
     <link rel = "stylesheet" type = "text/css" href = "css/otro.css">
     <link rel = "stylesheet" type = "text/css" href = "css/jquery.bxslider.css">
-    <link rel="stylesheet" href = "css/jquery-ui-1.10.3.custom.css">
+    <link rel = "stylesheet" href = "css/jquery-ui-1.10.3.custom.css">
+    <link rel = "stylesheet" href = "css/mediaelementplayer.min.css" >
+    <link rel = "stylesheet" href = "css/tipsy.css">
   </head>
   <body>
     <script src = "http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -19,6 +21,10 @@
     <script src = "js/bootstrap.min.js"></script>
     <script src = "js/jquery-ui-1.10.3.custom.js"></script>
     <script src = "js/jwplayer/jwplayer.js"></script>
+    <script src = "js/jquery.cycle.all.js"></script>
+    <script src = "js/mediaelement-and-player.min.js"></script>
+    <script src = "js/jquery.jcarousel.min.js"></script>
+    <script src = "js/jquery.tipsy.js"></script>
 
 
     <div id = "cuerpo">
@@ -75,16 +81,53 @@
       </div>
 
       <!-- Contenido -->
-      <div id = "contenido">
-        <ul id = "menu_act">
-          <li class = "info"></li>
-          <li class = "docu"></li>
-          <li class = "part"></li>
-          <li class = "foto"></li>
-          <li class = "vide"></li>
-        </ul>
-      </div>  
 
+      <!--
+      Usaré esta actividad como "base"
+      http://www.mpfn.gob.pe/escuela/sec_actividades.php?comando=611&codigo=2634&modulo=1&pestanna=1
+      -->
+
+      <div id = "contenido">
+        <ul class = "menu_act">
+          <li class = "info" tooltip = "Información"></li>
+          <li class = "docu" tooltip = "Documentos"></li>
+          <li class = "part" tooltip = "Participantes"></li>
+          <li class = "foto" tooltip = "Fotos"></li>
+          <li class = "vide" tooltip = "Vídeos"></li>
+        </ul>
+        <div class = "titulo_act">
+          II Curso de Argumentación Jurídica y Razonamiento Lógico
+        </div>
+        <div class = "titulo_act subt">
+          Mód 1: Lógica Proposicional, Silogística Aristotélica y Lógica Deóntica
+        </div>
+        <table class = "tabla_act">
+          <tbody>
+            <tr>
+              <td>Fecha</td>
+              <td>02/09/2013 - 13/09/2013</td>
+            </tr>
+            <tr>
+              <td>Sede</td>
+              <td>Lima</td>
+            </tr>
+            <tr>
+              <td>Lugar</td>
+              <td>Sala de Conferencias Rubén Mayorga Montoya, Escuela del Ministerio Público piso 11</td>
+            </tr>
+            <tr>
+              <td>Dirigido a</td>
+              <td>Fiscales de todos los niveles y especialidades del Ministerio Público de los Distritos Fiscales de Lima, Lima Norte, Lima Sur, Lima Este y Callao</td>
+            </tr>
+            <tr>
+              <td>Coordinador</td>
+              <td>Daniela Millones</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Mini menú -->
       <div id = "menu_dos">
         <ul>
           <li>Pasantías</li>
@@ -180,33 +223,6 @@
 
       <!-- jQuery -->
       <script>
-      $(document).ready(function() {
-        $(".bxslider").bxSlider({
-          auto: true,
-          mode: "fade",
-          pager: false, //Para que no aparezcan los puntitos
-          speed: 1000 //La velocidad con la que se mueve
-        });
-        //alert("Hola");
-        /*$("#busc_acti_outer").css({
-          "width": 295,
-          "height": 540,
-        },2000);
-        $("#busc_acti_inner").css({
-          "width": 235,
-          "height": 480,
-        },2000);
-        $("#calendario").css({
-          "left": -28,
-          "top": 12,
-        },2000,function() {
-          $("#contenido").css({
-            "z-index": "2",
-          });
-        });*/
-      });
-      </script>
-      <script>
       $(function() {
         $( "#datepicker" ).datepicker({
           inline: true
@@ -220,6 +236,10 @@
             $( this ).removeClass( "ui-state-hover" );
           }
         );
+      });
+      $(document).ready(function() {
+        var menu_act = [".info", ".docu", ".part", ".foto", ".vide"];
+        for(e in menu_act) $(menu_act[e]).tipsy({gravity: "s", title: "tooltip"});
       });
       </script>
     </div>

@@ -691,12 +691,18 @@ ul.bxslider {
 
 /* Actividades académicas */
 
-#menu_act {
+.menu_act {
+  position: relative;
   list-style: none;
-  width: 500px;
+  padding: 30px 0 0 0;
+  margin: 0 auto;
 }
 
-#menu_act li {
+.menu_act:after {
+  clear: both;
+}
+
+.menu_act li {
   position: relative;
   float: left;
   width: 60px;
@@ -705,42 +711,72 @@ ul.bxslider {
   margin: 0 20px;
 }
 
-#menu_act li.info {
+.menu_act li.info {
   background-position: 0 0;
 }
 
-#menu_act li.info:hover {
+.menu_act li.info:hover {
   background-position: -60px 0;
 }
 
-#menu_act li.docu {
+.menu_act li.docu {
   background-position: -120px 0;
 }
 
-#menu_act li.docu:hover {
+.menu_act li.docu:hover {
   background-position: -180px 0;
 }
 
-#menu_act li.part {
+.menu_act li.part {
   background-position: -240px 0;
 }
 
-#menu_act li.part:hover {
+.menu_act li.part:hover {
   background-position: -300px 0;
 }
 
-#menu_act li.foto {
+.menu_act li.foto {
   background-position: 240px 0;
 }
 
-#menu_act li.foto:hover {
+.menu_act li.foto:hover {
   background-position: 180px 0;
 }
 
-#menu_act li.vide {
+.menu_act li.vide {
   background-position: 120px 0;
 }
 
-#menu_act li.vide:hover {
+.menu_act li.vide:hover {
   background-position: 60px 0;
+}
+
+/* Título de la actividad */
+
+.titulo_act {
+  position: relative;
+  clear: both;
+  width: 50%;
+  color: rgb(0,123,189);
+  font-size: 15px;
+  text-align: center;
+  margin: 10px auto 0 auto;
+}
+
+.subt {
+  width: 100%;
+  font-size: 13px;
+  font-style: italic;
+  margin: 5px 0;
+}
+
+/* Tabla en actividades académicas */
+
+.tabla_act td {
+  font-size: 12px;
+  padding: 10px;
+}
+
+.tabla_act td:first-child {
+  color: rgb(0,123,189);
 }
