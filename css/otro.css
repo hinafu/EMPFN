@@ -772,6 +772,10 @@ ul.bxslider {
 
 /* Tabla en actividades académicas */
 
+.tabla_act {
+  width: 100%;
+}
+
 .tabla_act td {
   font-size: 12px;
   padding: 10px;
@@ -779,4 +783,53 @@ ul.bxslider {
 
 .tabla_act td:first-child {
   color: rgb(0,123,189);
+}
+
+.obj {
+  color: rgb(0,0,0) !important;
+}
+
+.expo {
+  position: relative;
+  float: left;
+  clear: both;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.expo .imgExpo {
+  position: relative;
+  margin: 0 10px 0 0;
+  height: 100px;
+  float: left;
+}
+
+.expo h1 {
+  color: rgb(0,123,189);
+  font-size: 13px !important;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.tabla_doc td:first-child {
+  color: rgb(0,0,0);
+}
+
+.tabla_doc_header {
+  background-color: rgb(5,65,119);
+  text-align: center;
+  color: rgb(255,255,255) !important;
+  padding: 5px 0 !important;
+  border-radius: 3px;
+}
+
+.tabla_doc_download_button {
+  float: right;
+  width: 9px;
+  height: 10px;
+  background: url("../images/download.png") 0 0;
+}
+
+.tabla_doc_download_button:hover {
+  background-position: 0 9px;
 }
